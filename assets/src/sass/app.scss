@@ -1,0 +1,24 @@
+
+@import 'resources/fonts';  // Importação de fontes
+@import 'resources/colors'; // Cores
+
+
+.avatar{
+    justify-content: center;
+}
+
+.title{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 0.5%;
+}
+
+.name{
+    font-size: $title;
+    font-family: $font-default;
+}
+
+.dev{
+    font-size: $sub-title;
+    font-family: $font-default;
+}
