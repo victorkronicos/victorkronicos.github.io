@@ -28,7 +28,7 @@ const paths = {
 const assets = {
     css: [
         "node_modules/bootstrap/dist/css/bootstrap.min.css",
-        // "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+        "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
         // "node_modules/slick-carousel/slick/slick.css",
         // "node_modules/slick-carousel/slick/slick-theme.css",
         // "node_modules/aos/dist/aos.css"
@@ -36,6 +36,7 @@ const assets = {
     js: [
         "node_modules/jquery/dist/jquery.slim.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
         // "node_modules/slick-carousel/slick/slick.min.js",
         // "node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"
     ],
@@ -93,6 +94,7 @@ function watch() {
     gulp.watch(paths.dev.js, minJs);
     gulp.watch(paths.dev.sass, gulp.series(sass));
 }
+
 
 // Tarefas
 
