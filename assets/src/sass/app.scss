@@ -1,5 +1,12 @@
 @import "resources/fonts"; // Importação de fontes
 @import "resources/colors"; // Cores
+@import "resources/variables"; // Variáveis
+@import "elements/navbar"; // Navbar
+
+*{
+    font-family: $font-default;
+}
+
 
 .header {
   .avatar {
@@ -31,6 +38,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (min-width: $bp-sm) and (max-width: $bp-md) {
+      max-width: 100%;
+    }
     max-width: 50%;
     .item {
       display: flex;

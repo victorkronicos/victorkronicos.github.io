@@ -1,0 +1,89 @@
+@media screen and (min-width: $bp-md){
+    .navbar{
+        .navbar-center{
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        
+        .navbar-border{
+            background: $github;
+            margin: 0 20rem;
+            border-bottom-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+        }
+        
+        .navbar-nav{
+            padding: 0.5rem 0;
+            .nav-item{
+                .nav-link{
+                    font-weight: 500;
+                    color: white;
+                    border-radius: 10px;
+                    transition: all 0.15s ease-in;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+                    &:focus{
+                        background-color: white;
+                        color: black;
+                        outline: none;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+@media screen and (min-width: $bp-sm) and (max-width: $bp-md){
+    .navbar{
+
+        .navbar-toggler{
+            display: block;
+            margin: 0.5rem auto;
+            border: none;
+            color: white;
+            background-color: $github;
+            padding: 0.8rem;
+            border-radius: 50%;
+            &:focus{
+                outline: none;
+            }
+        }
+        .navbar-center{
+            width: 100%;
+            align-items: center;
+        }
+        
+        .navbar-border{
+            background: $github;
+            border-radius: 10px;
+        }
+        
+        .navbar-nav{
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid black;
+            .nav-item{
+                width: 100%;
+                .nav-link{
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 500;
+                    color: white;
+                    transition: all 0.15s ease-in;
+                    &:focus{
+                        background-color: white;
+                        color: black;
+                        outline: none;
+                    }
+                }
+            }
+        }    
+    }
+}
+
+
+.navbar-top{
+    padding: 0;
+}
